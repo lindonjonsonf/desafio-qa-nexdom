@@ -22,6 +22,8 @@ module.exports = defineConfig({
 
     specPattern: "**/*.feature",
     baseUrl: "https://nexdom.tec.br",
+    viewportWidth: 1366,
+    viewportHeight: 768,
     chromeWebSecurity: false,
   },
 });

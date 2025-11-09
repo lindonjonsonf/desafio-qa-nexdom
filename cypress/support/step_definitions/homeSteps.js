@@ -4,7 +4,7 @@ Given("que acesso a página inicial da Nexdom", () => {
   cy.visit("/");
 });
 
-Then("devo ver o texto {string}", (texto) => {
+Then("devo ver o texto principal {string}", (texto) => {
   cy.contains(texto).should("be.visible");
 });
 
