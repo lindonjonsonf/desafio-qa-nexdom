@@ -26,7 +26,7 @@ O **Cypress** foi selecionado por ser um *framework* moderno e completo, ideal p
 O projeto segue uma estrutura organizada para testes com Cypress:
 
 ```
-nexdom/
+desafio-qa-nexdom/
 ├── cypress/
 │   ├── e2e/
 │   │   ├── features/               → Testes de UI escritos em Gherkin (BDD)
