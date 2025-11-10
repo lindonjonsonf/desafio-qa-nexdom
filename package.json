@@ -2,16 +2,20 @@
   "name": "nexdom",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "description": "",
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
+  "scripts": {
+    "cypress:open": "npx cypress open",
+    "test:ui": "npx cypress run --spec 'cypress/e2e/features/**/*.feature'",
+    "test:api": "npx cypress run --spec 'cypress/e2e/api/**/*.cy.js'",
+    "test:all": "npx cypress run"
+  },
   "devDependencies": {
     "@badeball/cypress-cucumber-preprocessor": "^23.2.1",
     "@bahmutov/cypress-esbuild-preprocessor": "^2.2.7",
-    "cypress": "^15.6.0"
+    "cypress": "^15.6.0",
+    "dotenv": "^17.2.3"
   }
 }
